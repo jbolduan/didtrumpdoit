@@ -225,14 +225,16 @@ $(document).ready(function() {
             },
             responsive: false,
             maintainAspectRatio: false,
-            borderColor: '#35383b',
+            borderColor: '#000000',
+            borderWidth: 1,
             cutout: 70,
             plugins: {
                 legend: {
                     display: true,
                     position: 'left',
                     labels: {
-                        usePointStyle: true
+                        usePointStyle: true,
+                        color: 'white'
                     }
                 }
             }
