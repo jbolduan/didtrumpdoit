@@ -133,7 +133,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto d-lg-flex align-items-center">
                         <form class="navbar-nav ms-auto flex-row-reverse">
-                            <a class="nav-link" href="https://github.com/jbolduan/didtrumpdoit.com/issues/new"><button type="button"
+                            <a class="nav-link" href="https://github.com/jbolduan/didtrumpdoit/issues/new"><button type="button"
                                     class="btn btn-outline-primary">Report Issue</button></a>&nbsp;
 
                             <a class="nav-link"
