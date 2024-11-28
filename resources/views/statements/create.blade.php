@@ -1,6 +1,6 @@
 <?php
 $statuses = App\Models\Status::all();
-$categories = App\Models\Category::all();
+$categories = App\Models\Category::all()->sortBy('name');
 ?>
 @extends('layouts.app')
 
@@ -44,19 +44,28 @@ $categories = App\Models\Category::all();
             <label for="status_details">Status Details</label>
             <textarea style="height: 200px;" name="status_details" id="status_details" class="form-control" required></textarea>
 
-            <!-- <label for="is_public">Public</label>
-            <select name="is_public" id="is_public" class="form-select" required>
-                <option value="1">Yes</option>
-                <option value="0">No</option>
-            </select> -->
-
-            <label for="category">Category</label>
+            <div class="dropdown mt-2">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    Select Categories
+                </button>
+                <ul class="dropdown-menu p-2">
+                    @foreach($categories as $category)
+                    <li>
+                        <label class="form-check-lable" for="category-checkbox-{{ $category->id }}">
+                            <input type="checkbox" name="category[]" id="category-checkbox-{{ $category->id }}" value="{{ $category->id }}" class="form-check-input">
+                            {{ $category->name }}
+                        </label>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+            <!-- <label for="category">Category</label>
             <select name="category[]" id="category" class="form-select" multiple="multiple" required>
                 @foreach($categories as $category)
                 <option value="{{ $category->id }}">{{ $category->name }}</option>
                 @endforeach
             </select>
-            <hr />
+            <hr /> -->
 
             <label for="urls">URLs (one per line)</label>
             <textarea style="height: 200px;" name="urls" id="link" class="form-control" required></textarea>

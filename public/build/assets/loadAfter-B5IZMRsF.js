@@ -1,0 +1,1 @@
+var a=moment(),d=moment("2025-01-20"),i=moment("2024-11-05");$("#inaguration-days").html(d.diff(a,"days")>0?d.diff(a,"days"):"NA");$("#days-in-office").html(a.diff(d,"days")>0?a.diff(d,"days"):0);$("#days-since-election").html(a.diff(i,"days")>0?a.diff(i,"days"):0);
