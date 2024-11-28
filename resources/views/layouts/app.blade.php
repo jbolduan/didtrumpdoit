@@ -2,6 +2,16 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-bs-theme="dark">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PB5SE1QQRN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PB5SE1QQRN');
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -219,6 +229,9 @@
     </div>
     <!-- Load After Scripts -->
     @vite(['resources/js/loadAfter.js'])
+
+    <!-- Clicky Stats -->
+    <script async data-id="101469809" src="//static.getclicky.com/js"></script>
 </body>
 
 </html>
