@@ -336,6 +336,7 @@ $(document).ready(function() {
         $('input[type="checkbox"][id^="category-checkbox"]:not(:checked)').click();
         $('input[type="checkbox"][id^="status-checkbox"]:not(:checked)').click();
         $('#search').prop('value', '');
+        $('#search').trigger('keyup');
 
         updateStatusCountsAndChart();
     })
