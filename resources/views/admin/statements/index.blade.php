@@ -8,6 +8,8 @@
 @endif
 
 <div class="">
+    <h1>Statements</h1>
+    <a class="btn btn-small btn-success" href="{{ URL::to('admin/statements/create') }}">Create</a>
     <table class="table table-striped table-bordered">
         <thead>
             <td>id</td>

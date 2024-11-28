@@ -7,6 +7,8 @@
 @endif
 
 <div class="">
+    <h1>Statuses</h1>
+    <a class="btn btn-small btn-success" href="{{ URL::to('admin/statuses/create') }}">Create</a>
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
