@@ -128,17 +128,22 @@
                         <li class="nav-item nav-item active">
                             <a href="https://trumptracker.github.io/" class="nav-link">Old Data</a>
                         </li>
+                        <li class="nav-item nav-item active">
+                            <a href="{{ URL::Route('about') }}" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item nav-item active">
+                            <a href="{{ URL::Route('api') }}" class="nav-link">API</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto d-lg-flex align-items-center">
                         <form class="navbar-nav ms-auto flex-row-reverse">
                             <a class="nav-link" href="https://github.com/jbolduan/didtrumpdoit/issues/new"><button type="button"
-                                    class="btn btn-outline-primary">Report Issue</button></a>&nbsp;
+                                    class="btn btn-outline-purple">Report Issue</button></a>&nbsp;
 
                             <a class="nav-link"
                                 href="<?php echo url("/statements/create"); ?>"><button
-                                    type="button" class="btn btn-outline-primary">Submit Promise</button></a>
+                                    type="button" class="btn btn-outline-purple">Submit Promise</button></a>
                         </form>
 
                         <!-- Authentication Links -->

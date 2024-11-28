@@ -62,3 +62,10 @@ body {
 .page-nav {
     background-color: $gray-800;
 }
+
+.btn-outline-purple {
+    --bs-btn-color: white !important;
+    --bs-btn-hover-color: white !important;
+    --bs-btn-hover-bg: #7256ff !important;
+    border: 1px solid #7256ff !important;
+}
