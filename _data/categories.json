@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "name": "First 24 Hours",
+        "faIcon": "fa-clock",
+        "color": "#0dcaf0"
+    },
+    {
+        "id": "2",
+        "name": "First 100 Days",
+        "faIcon": "fa-calendar",
+        "color": "#f72585"
+    },
+    {
+        "id": "3",
+        "name": "Culture",
+        "faIcon": "fa-music",
+        "color": "#7209b7"
+    },
+    {
+        "id": "4",
+        "name": "Economy",
+        "faIcon": "fa-dollar-sign",
+        "color": "#ffba08"
+    },
+    {
+        "id": "5",
+        "name": "Environment",
+        "faIcon": "fa-leaf",
+        "color": "#3a0ca3"
+    },
+    {
+        "id": "6",
+        "name": "Government",
+        "faIcon": "fa-university",
+        "color": "#ff4301"
+    },
+    {
+        "id": "7",
+        "name": "Immigration",
+        "faIcon": "fa-suitcase",
+        "color": "#ff9f1c"
+    },
+    {
+        "id": "8",
+        "name": "Indigenous",
+        "faIcon": "fa-users",
+        "color": "#4cc9f0"
+    },
+    {
+        "id": "9",
+        "name": "Security",
+        "faIcon": "fa-fighter-jet",
+        "color": "#f3722c"
+    },
+    {
+        "id": "10",
+        "name": "Health",
+        "faIcon": "fa-heart",
+        "color": "#2ec4b6"
+    },
+    {
+        "id": "11",
+        "name": "World",
+        "faIcon": "fa-globe",
+        "color": "#f9c74f"
+    },
+    {
+        "id": "12",
+        "name": "Education",
+        "faIcon": "fa-graduation-cap",
+        "color": "#f8961e"
+    },
+    {
+        "id": "13",
+        "name": "Energy",
+        "faIcon": "fa-lightbulb",
+        "color": "#90be6d"
+    },
+    {
+        "id": "14",
+        "name": "Appointee Promise",
+        "faIcon": "fa-person",
+        "color": "#f72585"
+    },
+    {
+        "id": "15",
+        "name": "Republican Promise",
+        "faIcon": "fa-republican",
+        "color": "#ff4301"
+    },
+    {
+        "id": "16",
+        "name": "Influencer Promise",
+        "faIcon": "fa-trash",
+        "color": "#ff9f1c"
+    }
+]

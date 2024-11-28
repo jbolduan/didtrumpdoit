@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Not Started",
+        "faIcon": "fa-hourglass-start",
+        "color": "#0dcaf0"
+    },
+    {
+        "id": "2",
+        "name": "In Progress",
+        "faIcon": "fa-cogs",
+        "color": "#ffc107"
+    },
+    {
+        "id": "3",
+        "name": "Completed",
+        "faIcon": "fa-check-circle",
+        "color": "#198754"
+    },
+    {
+        "id": "4",
+        "name": "Broken",
+        "faIcon": "fa-ban",
+        "color": "#dc3545"
+    },
+    {
+        "id": "5",
+        "name": "Compromised",
+        "faIcon": "fa-handshake",
+        "color": "#6610f2"
+    }
+]
