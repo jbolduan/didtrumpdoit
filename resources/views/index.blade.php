@@ -40,8 +40,8 @@
                     <div class="row">
                         @foreach($statuses as $status)
                         <div class="col-sm-2">
-                            <span id="status-count-{{ $status->id }}" class="h1">...</span><br>
-                            <span class="fw-bolder" style="color: {{ $status->color }}">{{ $status->name }}</span>
+                            <span class="fw-bolder">{{ $status->name }}</span><br>
+                            <span class="h2"><i class="fa {{ $status->fa_icon }}" style="color: {{ $status->color }}; font-size: 0.6em;"></i>&nbsp;<span id="status-count-{{ $status->id }}">...</span></span>
                         </div>
                         @endforeach
                     </div>
@@ -70,19 +70,19 @@
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://x.com/share?url=https://didtrumpdoit.com/" target="_blank"
-                                    style="color:#1da1f2; text-align: center;">
+                                    style="color: #fff; text-align: center;">
                                     <i class="fa-brands fa-2x fa-x-twitter"></i><br>Share on X
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="http://www.reddit.com/submit?url=https://didtrumpdoit.com&title=DidTrumpDoIt.com"
-                                    target="_blank" style="color:#ff5700; text-align: center;">
-                                    <i class="fa-brands fa-2x fa-reddit"></i><br>Share on Reddit
+                                    target="_blank" style="color:#ff4500; text-align: center;">
+                                    <i class="fa-brands fa-2x fa-reddit-alien"></i><br>Share on Reddit
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://www.facebook.com/sharer.php?u=https://didtrumpdoit.com" target="_blank"
-                                    style="color:#3b5998; text-align: center;">
+                                    style="color:#0866ff; text-align: center;">
                                     <i class="fa-brands fa-2x fa-facebook-square"></i><br>Share on Facebook
                                 </a>
                             </li>
@@ -196,6 +196,9 @@
                         <li class="list-item"><span class="badge rounded-pill bg-secondary">N/A</span></li>
                         @endif
                     </ul>
+                </td>
+                <td>
+                    <i class="fa-solid fa-chevron-right"></i>
                 </td>
             </tr>
             <?php    $statementCounter++ ?>
