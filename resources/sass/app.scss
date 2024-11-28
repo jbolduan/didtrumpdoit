@@ -1,6 +1,6 @@
 // Fonts
 //@import url('https://fonts.bunny.net/css?family=Nunito');
-@import "https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lexend:wght@100..900&display=swap";
 
 // Variables
 @import 'variables';
@@ -11,6 +11,18 @@
 body {
     background-color: #1b1e22 !important;
     font-family: 'Lexend', sans-serif !important;
+}
+
+.serif-font {
+    font-family: DM Serif Text, serif !important;
+}
+
+.header-link {
+    color: #fff !important;
+}
+
+.header-link:hover {
+    color: #929196 !important;
 }
 
 .body-content {

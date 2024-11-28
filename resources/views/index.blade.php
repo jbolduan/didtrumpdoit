@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col">
             <div class="p-1"><img style="display: inline-block; width: 50px;" class="border border-danger border-2 rounded-circle img-fluid float-start" alt="picture of Donald Trump" src="{{URL::asset('/imgs/trump_face.png')}}"></div>
-            <div class="p-1"><span class="h1">&nbsp;Trump's Promises Tracker</span></div>
+            <div class="p-1"><span class="h1 serif-font">&nbsp;Trump's Promises Tracker</span></div>
         </div>
         <div class="col-auto hstack rounded shadow border" style="background-color: #272a2d;">
             <div class="hstack gap-1">
@@ -95,7 +95,7 @@
 </div>
 <div class="container fluid">
     <div class="row pt-4">
-        <span class="h2">Explore Promises</span>
+        <span class="h2 serif-font">Explore Promises</span>
         <span class="text-secondary">Filter promises by status or type</span>
     </div>
     <div class="row">

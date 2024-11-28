@@ -125,14 +125,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item nav-item active">
-                            <a href="https://trumptracker.github.io/" class="nav-link">Old Data</a>
+                        <li class="nav-item nav-item">
+                            <a href="https://trumptracker.github.io/" class="nav-link header-link">Old Data</a>
                         </li>
-                        <li class="nav-item nav-item active">
-                            <a href="{{ URL::Route('about') }}" class="nav-link">About</a>
+                        <li class="nav-item nav-item">
+                            <a href="{{ URL::Route('about') }}" class="nav-link header-link">About</a>
                         </li>
-                        <li class="nav-item nav-item active">
-                            <a href="{{ URL::Route('api') }}" class="nav-link">API</a>
+                        <li class="nav-item nav-item">
+                            <a href="{{ URL::Route('api') }}" class="nav-link header-link">API</a>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -150,30 +150,30 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a class="nav-link header-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         @endif
 
                         @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="nav-link header-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                         @endif
                         @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle header-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->username }}
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('admin') }}">
+                                        <a class="dropdown-item header-link" href="{{ route('admin') }}">
                                             {{ __('Dashboard') }}
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                        <a class="dropdown-item header-link" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
@@ -182,7 +182,7 @@
                                 </ul>
 
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none header-link">
                                     @csrf
                                 </form>
                             </div>
