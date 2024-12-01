@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('meta-title', $statement->title)
 @section('meta-description', $statement->description)
 
 @section('content')
