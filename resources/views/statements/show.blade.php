@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('meta-description', $statement->description)
+
 @section('content')
 
 <div class="h1 text-center m-2">{{ $statement->title }}</div>

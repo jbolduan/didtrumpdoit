@@ -17,15 +17,16 @@
 
     <meta name="robots" content="follow, index" />
     <meta name="description"
-        content="DidTrumpDoIt.com is a site dedicated to tracking what Donald Trump accomplishes and what he promised to accomplish.  We intend to hold Trump, conservative influencers, and Republicans responsible for the things they say." />
+        content="@yield('meta-description', 'DidTrumpDoIt.com is a site dedicated to tracking what Donald Trump accomplishes and what he promised to accomplish.  We intend to hold Trump, conservative influencers, and Republicans responsible for the things they say.')" />
 
     <!-- OpenGraph entries for better social sharing support -->
     <meta property="og:url" content="https://didtrumpdoit.com" />
     <meta property="og:type" content="WebSite" />
     <meta property="og:title" content="{{ config('app.name', 'Laravel') }}" />
-    <meta property="og:description" content="DidTrumpDoIt.com is a site dedicated to tracking what Donald Trump accomplishes and what he promised to accomplish.  We intend to hold Trump, conservative influencers, and Republicans responsible for the things they say." />
-    <meta property="og:image" content="https://didtrumpdoit.com/imgs/dtdi_ogimage.png" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:description" content="@yield('meta-description', 'DidTrumpDoIt.com is a site dedicated to tracking what Donald Trump accomplishes and what he promised to accomplish.  We intend to hold Trump, conservative influencers, and Republicans responsible for the things they say.')" />
+    <meta property="og:image" content="{{URL::asset('/imgs/dtdi_ogimage.png')}}" />
+    <meta property="twitter:image" content="{{URL::asset('/imgs/dtdi_square.png')}}" />
+    <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="@theGimpboy" />
     <meta property="twitter:creator" content="@theGimpboy" />
 
