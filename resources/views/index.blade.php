@@ -167,7 +167,7 @@
             @foreach($statements as $statement)
             <?php    $username = $statement->user->username ?? 'N/A'; ?>
             <?php    $public = $statement->is_public ? 'Yes' : 'No'; ?>
-            <tr class="status-{{$statement->status->id}}" data-href="<?php echo url("/statements/{$statement->id}"); ?>">
+            <tr class="status-{{$statement->status->id}}" data-href="<?php echo url("/statements/{$statement->id}"); ?>" style="cursor: pointer;">
                 <td >{{ $statementCounter }}</td>
                 <td class="dummy-class-for-count">
                     {{ $statement->title }}
@@ -178,7 +178,7 @@
                     @if($urlsCount > 0)
                     <?php        $counter = 0; ?>
                     @foreach($urls as $link)
-                    <a href="{{ $link }}">[{{ ($counter + 1) }}]</a>
+                    <a href="{{ $link }}" onclick="event.stopPropagation();" target="_blank">[{{ ($counter + 1) }}]</a>
                     <?php            $counter++; ?>
                     @endforeach
                     @else
